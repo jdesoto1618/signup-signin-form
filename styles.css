@@ -10,7 +10,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
 }
 
 /* set box sizing options. this allows other box sizing if needed */
@@ -38,10 +38,163 @@ span {
   font-size: 12px;
 }
 
-/* linmk styles */
+/* link styles */
 a {
   color: #222;
   font-size: 14px;
   text-decoration: none;
   margin: 15px 0;
+}
+
+/* container div styles */
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  width: 768px;
+  min-height: 480px;
+}
+
+/* form styles */
+.form-container form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* social container styles */
+.social-container {
+  margin: 20px 0;
+}
+
+/* social container link styles  */
+.social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+/* form input styles */
+.form-container input {
+  background: #eee;
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+/* button styles */
+button {
+  border-radius: 25px;
+  border: 1px solid #ff4b2b;
+  outline: none;
+  background: #ff4b2b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+/* button styles when clicked */
+button:active {
+  background: #d83c21;
+  transform: scale(0.95);
+}
+
+/* button ghost class styles */
+button.ghost {
+  background: transparent;
+  border-color: #fff;
+}
+
+/* form container styles, wrapped around both forms */
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+/* sign in container styles */
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+/* sign up container styles */
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  z-index: 1;
+  opacity: 0;
+}
+
+/* overlay container styles */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 10;
+}
+
+/* overlay styles */
+.overlay {
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat, 0 0 / cover;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+/* overlay panel styles */
+.overlay-panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+/* overlay right panel styles */
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+/* overlay left panel styles */
+.overlay-left {
+  transform: translateX(-20%);
 }
