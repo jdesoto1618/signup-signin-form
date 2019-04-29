@@ -1,3 +1,11 @@
 html, body {
-  background: blue;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+/* set box sizing options. this allows other box sizing if needed */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
