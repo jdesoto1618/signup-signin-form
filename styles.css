@@ -198,3 +198,36 @@ button.ghost {
 .overlay-left {
   transform: translateX(-20%);
 }
+
+/* animation to move sign in to the right */
+.container.right-panel-active .sign-in-container {
+  /* positive number moves right, negative moves left */
+  transform: translateX(100%);
+}
+
+/* move overlay to the left */
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+/* toggle sign up form on button clicks */
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* move overlay back on button click */
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+/* slide left panel text to center when toggling back and forth */
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+/* slide right panel text out of screen when toggling back and forth */
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
