@@ -143,6 +143,10 @@ button.ghost {
   opacity: 0;
 }
 
+.new-account-signup-button {
+  margin-top: 0.5rem;
+}
+
 /* overlay container styles */
 .overlay-container {
   position: absolute;
