@@ -108,7 +108,7 @@ button.ghost {
 }
 
 .form-container form input:focus {
-  border: 0.1rem solid #ff4b2b;
+  border-bottom: 0.1rem solid #ff4b2b;
 }
 
 .form-container input::placeholder {
