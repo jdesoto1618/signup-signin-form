@@ -95,6 +95,7 @@ button.ghost {
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .form-container input {
@@ -113,6 +114,18 @@ button.ghost {
 
 .form-container input::placeholder {
   letter-spacing: 0.1rem;
+}
+
+.sign-in-text {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1s linear, top 0.5s linear;
+}
+
+.show-sign-in-text {
+  opacity: 1;
+  top: 5rem;
 }
 
 .social-container {
