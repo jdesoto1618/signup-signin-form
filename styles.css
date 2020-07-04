@@ -95,7 +95,6 @@ button.ghost {
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
 }
 
 .form-container input {
@@ -116,16 +115,19 @@ button.ghost {
   letter-spacing: 0.1rem;
 }
 
-.sign-in-text {
-  position: absolute;
-  top: 0;
+.sign-in-text,
+.create-account-text {
   opacity: 0;
-  transition: opacity 1s linear, top 0.5s linear;
+  transition: opacity 1.5s linear;
 }
 
-.show-sign-in-text {
+.show-text {
   opacity: 1;
   top: 5rem;
+}
+
+.create-account-text {
+  transition-delay: 0.35s;
 }
 
 .social-container {
