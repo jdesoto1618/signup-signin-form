@@ -111,6 +111,10 @@ button.ghost {
   border: 0.1rem solid #ff4b2b;
 }
 
+.form-container input::placeholder {
+  letter-spacing: 0.1rem;
+}
+
 .social-container {
   margin: 2rem 0;
   width: 20rem;
