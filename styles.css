@@ -107,6 +107,10 @@ button.ghost {
   transition: border 0.3s linear;
 }
 
+.form-container form input:focus {
+  border: 0.1rem solid #ff4b2b;
+}
+
 .social-container {
   margin: 2rem 0;
   width: 20rem;
@@ -261,12 +265,12 @@ button.ghost {
     margin-top: 2rem;
   }
 
-  .form-container form input:focus {
-    border: 0.1rem solid #ff4b2b;
-  }
-
   .social-container a {
     width: 4rem;
     height: 4rem;
+  }
+
+  .forgot-password:hover {
+    text-decoration: underline;
   }
 }
