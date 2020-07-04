@@ -277,4 +277,10 @@ button.ghost {
   .forgot-password:hover {
     text-decoration: underline;
   }
+
+  .sign-in-button:hover,
+  .new-account-signup-button:hover {
+    background: transparent;
+    color: #ff4b2b;
+  }
 }
