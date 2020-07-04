@@ -1,8 +1,10 @@
 const signUpButton = document.querySelector('#signUp');
 const signInButton = document.querySelector('#signIn');
+const loginButton = document.querySelector('.login-button');
 const container = document.querySelector('#container');
 const signInText = document.querySelector('.sign-in-text');
 const createAccountText = document.querySelector('.create-account-text');
+let inputs = document.querySelectorAll('form input');
 
 signUpButton.addEventListener('click', () => {
   container.classList.add('right-panel-active');
