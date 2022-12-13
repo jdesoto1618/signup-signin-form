@@ -134,19 +134,15 @@ button.ghost {
   letter-spacing: 0.1rem;
 }
 
-.sign-in-text,
-.create-account-text {
+.form-heading {
   opacity: 0;
   transition: opacity 1.125s ease;
+  transition-delay: 0.35s;
 }
 
 .show-text {
   opacity: 1;
   top: 5rem;
-}
-
-.create-account-text {
-  transition-delay: 0.35s;
 }
 
 .social-container {
