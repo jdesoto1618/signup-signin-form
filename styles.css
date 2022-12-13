@@ -2,18 +2,24 @@
   --white: #fff;
   --black: #000;
   --page-background-color: #eee;
-  --text-color: var(--text-color);
+  --text-color: #222;
   --red-300: #ff416c;
   --red-400: #ff4b2b;
   --red-600: #d83c21;
-  --form-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  --red-gradient: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat, 0 0 / cover;
+  --form-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  --red-gradient: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat,
+    0 0 / cover;
+  --text-xl: 2rem;
+  --text-md: 1.25rem;
+  --text-sm: 1rem;
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: var(--page-background-color);
   display: flex;
   flex-direction: column;
@@ -29,35 +35,35 @@ html, body {
 }
 
 h1 {
+  font-size: var(--text-xl);
   margin: 0;
-  font-size: 2rem;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: var(--text-md);
   letter-spacing: 0.05rem;
   margin: 2rem 0 3rem;
 }
 
 span {
-  font-size: 1rem;
+  font-size: var(--text-sm);
 }
 
 a {
+  font-size: var(--text-md);
   color: var(--text-color);
-  font-size: 1.25rem;
   text-decoration: none;
   margin: 1.5rem 0;
 }
 
 button {
+  font-size: var(--text-md);
+  font-weight: 700;
   border-radius: 2.5rem;
   border: 0.1rem solid var(--red-400);
   outline: none;
   background: var(--red-400);
   color: var(--white);
-  font-weight: bold;
-  font-size: 1.25rem;
   padding: 1.2rem 4.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -249,25 +255,10 @@ button.ghost {
 }
 
 @media (min-width: 64em) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  a {
-    font-size: 1.4rem;
-  }
-
-  span {
-    font-size: 1.2rem;
-  }
-
-  button {
-    font-size: 1.4rem;
-    padding: 1.2rem 4.5rem;
+  :root {
+    --text-xl: 3rem;
+    --text-md: 1.4rem;
+    --text-sm: 1.2rem;
   }
 
   .container {
@@ -312,6 +303,6 @@ button.ghost {
 
   .container.right-panel-active .overlay-left:hover,
   .overlay-right:hover {
-    transform: translateX(0) scale(1.0);
+    transform: translateX(0) scale(1);
   }
 }
