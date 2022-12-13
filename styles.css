@@ -1,4 +1,15 @@
-/* styles for html and body */
+:root {
+  --white: #fff;
+  --black: #000;
+  --page-background-color: #eee;
+  --text-color: #222;
+  --red-300: #ff416c;
+  --red-400: #ff4b2b;
+  --red-600: #d83c21;
+  --form-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --red-gradient: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat, 0 0 / cover;
+}
+
 html, body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
@@ -147,14 +158,12 @@ button.ghost {
   transition: border 0.3s linear;
 }
 
-/* sign in container styles */
 .sign-in-container {
   left: 0;
   width: 50%;
   z-index: 2;
 }
 
-/* sign up container styles */
 .sign-up-container {
   left: 0;
   width: 50%;
@@ -166,7 +175,6 @@ button.ghost {
   margin-top: 0.5rem;
 }
 
-/* overlay container styles */
 .overlay-container {
   position: absolute;
   top: 0;
@@ -178,7 +186,6 @@ button.ghost {
   z-index: 10;
 }
 
-/* overlay styles */
 .overlay {
   background: #ff416c;
   background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat, 0 0 / cover;
@@ -191,7 +198,6 @@ button.ghost {
   transition: transform 0.6s ease-in-out;
 }
 
-/* overlay panel styles */
 .overlay-panel {
   position: absolute;
   top: 0;
@@ -212,40 +218,32 @@ button.ghost {
   transform: translateX(0);
 }
 
-/* overlay left panel styles */
 .overlay-left {
   transform: translateX(-20%);
 }
 
-/* animation to move sign in to the right */
 .container.right-panel-active .sign-in-container {
-  /* positive number moves right, negative moves left */
   transform: translateX(100%);
 }
 
-/* move overlay to the left */
 .container.right-panel-active .overlay-container {
   transform: translateX(-100%);
 }
 
-/* toggle sign up form on button clicks */
 .container.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
 }
 
-/* move overlay back on button click */
 .container.right-panel-active .overlay {
   transform: translateX(50%);
 }
 
-/* slide left panel text to center when toggling back and forth */
 .container.right-panel-active .overlay-left {
   transform: translateX(0);
 }
 
-/* slide right panel text out of screen when toggling back and forth */
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
