@@ -2,6 +2,7 @@ const signUpButton = document.querySelector("#signUp");
 const signInButton = document.querySelector("#signIn");
 const loginButton = document.querySelector(".login-button");
 const formWrapper = document.querySelector(".container");
+const formHeading = document.querySelector(".form-heading");
 const signInText = document.querySelector(".form-heading.sign-in");
 const createAccountText = document.querySelector(
   ".form-heading.create-account"
@@ -9,13 +10,11 @@ const createAccountText = document.querySelector(
 let inputs = document.querySelectorAll("form input");
 
 signUpButton.addEventListener("click", () => {
-  formWrapper.classList.add("right-panel-active");
-  createAccountText.classList.add("show-text");
-  signInText.classList.remove("show-text");
+  formWrapper.classList.toggle("right-panel-active");
+  formHeading.classList.toggle("show-text");
 });
 
 signInButton.addEventListener("click", () => {
-  formWrapper.classList.remove("right-panel-active");
-  signInText.classList.add("show-text");
-  createAccountText.classList.remove("show-text");
+  formWrapper.classList.toggle("right-panel-active");
+  formHeading.classList.toggle("show-text");
 });
