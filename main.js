@@ -19,7 +19,3 @@ signInButton.addEventListener("click", () => {
   signInText.classList.add("show-text");
   createAccountText.classList.remove("show-text");
 });
-
-window.onload = () => {
-  signInText.classList.add("show-text");
-};
