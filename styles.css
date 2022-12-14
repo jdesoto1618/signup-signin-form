@@ -109,6 +109,10 @@ button.ghost {
   text-align: center;
 }
 
+.form-copy-wrapper {
+  margin-bottom: 2rem;
+}
+
 .form-heading {
   font-size: var(--text-xl);
   margin: 0;
@@ -305,10 +309,6 @@ button.ghost {
 
   .form {
     padding: 0 5rem;
-  }
-
-  .form-input:first-of-type {
-    margin-top: 2rem;
   }
 
   .social-container a {
